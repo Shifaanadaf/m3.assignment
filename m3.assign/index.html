@@ -1,83 +1,53 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-g">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	
-	<title>mod3.assignment</title>
-	
-	
-	<style>
-		*{
-			box-sizing: border-box;
-			border: 0;
-			padding: 0;
-			margin: 0px;
-		}
-		
-		.container{
-			width: 100%;
-			background-color: white;
-		}
-		p{
-			width: 100%;
-			height: 100px;
-			background-color: grey;
-			
-			top: 0px;
-			position: relative;
-			
-		}
-		.jumpatron{
-			width: 90%;
-			height: 300px;
-			
-			background-color: grey;
-			position: relative;
-			top:50px;
-			left: 50px;
-			right: -100px;
-            border: 100px 100px 100px 100px;
-            padding: 20px 20px 20px 20px ;
-
-		}
-       .wrap{
-       	margin:auto;
-       	position:absolute; 
-       	top:50%;
-       	left:50%;
-       	transform: translate(-50%, -50%);
-       }
-       .icon{
-       	width: 40px;
-       	height: 10px;
-       	background: black;
-       	margin: 6px 0;
-       	float: right;
-       }
-
-		
-	</style>
 </head>
+<style>
+	*{
+		padding:0;
+		margin:0;
+
+	}
+	nav{
+		height: 80px;
+		width: 100%;
+		background:grey;
+
+	}
+	nav ul{
+		float: right;
+		margin-right: 40px;
+
+	}
+	nav a{
+		color: black;
+		font-size: 18px;
+		text-transform: uppercase;
+
+	}
+	nav #icon{
+		color: black;
+		font-size: 30px;
+		line-height: 80px;
+		float:right;
+		margin-right: 40px;
+		cursor:pointer;
+	}
 <body>
-<div class="container">
-	<p>FOOD,LLC</p>
-	<div class="wrap">
-		<div class="icon"></div>
-		<div class="icon"></div>
-		<div class="icon"></div>
-	</div>
-	<center>OUR MENU</center>
-	<div class="jumpatron">
-		<center>chicken</center>
-		lorem ipsom
-	</div>
+	<nav>
+		<ul>
+			<li><a href="#">menu</a></li>
+			<li><a href="#">about</a></li>
+			<li><a href="#">home</a></li>
+		</ul>
+	<label id="icon">
+	<i class="fas fa-bars"></i>
+	</label>
 
-	
-</div>
-
-
+	</nav>
 
 </body>
 </html>
