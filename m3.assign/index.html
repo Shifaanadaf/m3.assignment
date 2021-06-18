@@ -1,50 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 <head>
-	<meta charset="utf-g">
-	
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	
-	<title>mod3.assignment</title>
+	<meta charset="utf-8">
+	<title>module3</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
 	<style>
-		*{
+				*{
 			padding:0;
 			margin:0;
 			text-decoration: none;
 			list-style: none;
 			box-sizing:border-box; 
 		}
+		body{
+			font-family: montserrat;
+		}
 		nav{
+			background: grey;
 			height: 100px;
 			width: 100%;
-			background-color: grey;
 		}
 		label.logo{
 			color: black;
-			text-decoration: none;
-			font-weight: bold;
-			font-size: 30px;
-			margin-left: 20px;
-			padding: 0 100px;
+			font-size: 35px;
 			line-height: 80px;
-
-		}
-		.container{
-			width: 100%;
-			height: 100%;
-			background-color: white;
-
-		}
-		.jumbotron{
-			width: 90%;
-			height: 300px;
-			background-color: grey;
-			margin-right: 50px;
-			margin-left: 50px;
-			margin-top: 50px;
-			padding: 20px 20px 20px 20px;
-			
-			position: relative;
+			padding: 0 100px;
+			font-weight: bold;
 
 		}
 		nav ul{
@@ -60,6 +42,17 @@
 			color:black;
 			font-size: 17px;
 			text-transform: uppercase;
+
+		}
+		label.jumpatron{
+			color: grey;
+			font-size: 20px;
+			width: 80%;
+			margin-right: 100px;
+			margin-left: 100px;
+			padding: 10px 10px 10px 10px;
+			margin-top: 100px;
+
 
 		}
 		.checkbtn{
@@ -84,7 +77,10 @@
 			nav ul li a{
 				font-size: 16px;
 			}
-			
+			label.jumpatron{
+				font-size: 20px;
+				margin-top: 100px;
+			}
 
 		}
 		@media (max-width: 768px)
@@ -108,33 +104,38 @@
 			nav ul li a{
 				font-size: 20px;
 			}
-			
+			label.jumpatron{
+				font-size: 30px;
+				margin-top: 150px;
+			}
 			
 		}
 
-	</style>
+		
+	
+</style>
+
 </head>
 <body>
-<nav>
+	<nav>
 	<input type="checkbox" id="check">
 	<label for="check" class="checkbtn">
 	<i class="fas fa-bars"></i>
 </label>
-<label class="logo">Food,LLC</label>
-<ul>
+		<label class="logo">Food,LLC</label>
+		<ul>
 			<li><a href="#">chicken</a></li>
 			<li><a href="#">beef</a></li>
 			<li><a href="#">sushi</a></li>
 		</ul>
-</nav>
-<div class="container">
-	<p><center>OUR MENU</center></p>
-	<div class="jumbotron">
-		<center><B>Chicken</B></center><br>
-		<p>lorem ipsom</p>
-	</div>
-	
-</div>
+
+	</nav>
+	<p>OUR MENU</p>
+	<label class="jumpatron">
+		<center>chicken</center><br>
+		lorem ipsom
+		</label>
+
 
 
 
