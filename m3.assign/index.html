@@ -52,15 +52,28 @@
 			border: 1px solid white;
 			transition: .5s;
 		}
-		nav #ic
+		nav.wrap{
+			position: absolute;
+			top:50%;
+			left:50%;
+			transform: translate(-50%, -50%);
+		}
+		nav.menu{
+			width: 30px;
+			height: 10px;
+			color:white;
+			margin:6px 0px;
+		}
 		
 	</style>
 </head>
 <body>
 	<nav>
-		<label id="icon">
-			<i class="fa fa-bars"></i>
-		</label>
+		<div class="wrap">
+			<div class="menu"></div>
+			<div class="menu"></div>
+			<div class="menu"></div>
+		</div>
 		<label class="logo">Food,LLC</label>
 		<ul>
 			<li><a class="active" href="#">chicken</a></li>
