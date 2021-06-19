@@ -30,6 +30,27 @@
 		}
 		nav ul{
 			float:right;
+			margin-right: 40px;
+
+		}
+		nav li{
+			display: inline-block;
+			margin: 0 8px;
+			line-height: 80px;
+		}
+		nav a{
+			color: white;
+			font-size: 18px;
+			text-transform: uppercase;
+			border: 1px solid transparent;
+			padding: 7px 10px;
+			border-radius: 3px;
+
+
+		}
+		a.active,a:hover{
+			border: 1px solid white;
+			transition: .5s;
 		}
 	</style>
 </head>
@@ -37,7 +58,7 @@
 	<nav>
 		<label class="logo">Food,LLC</label>
 		<ul>
-			<li><a href="#">chicken</a></li>
+			<li><a class="active" href="#">chicken</a></li>
 			<li><a href="#">beef</a></li>
 			<li><a href="#">sushi</a></li>
 		</ul>
