@@ -5,6 +5,16 @@
 	<title>m3assign</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#icon').click(function(){
+				$('ul').toggleClass('show');
+
+			});
+
+		});
+	</script>
 	<style>
 		*{
 			padding:0;
@@ -88,7 +98,7 @@
 				height: 100vh;
 				background: #2f3640;
 				top:80px;
-				left: -100%;
+				left: 0;
 				text-align: center;
 				transition: all .5s;
 			}
@@ -102,9 +112,14 @@
 				font-size: 20px;
 
 			}
-			a.active,a:hover{
+			a.active,a:hover
+			{
 				border: none;
 				color: #3498db;
+			}
+			nav ul.show{
+				left:0;
+
 			}
 			
 		}
